@@ -1,6 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "ingredients": [{ "item": "minecraft:clay" }],
+  "ingredients": [
+    { "item": "minecraft:clay" }
+  ],
   "result": {
     "item": "minecraft:gunpowder",
     "count": 16,

@@ -1,20 +1,15 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "###",
-        "#W#",
-        "###"
-    ],
-    "key": {
-        "#": {
-            "item": "minecraft:dirt"
-        },
-        "W": {
-            "item": "minecraft:wooden_shovel"
-        }
-    },
-    "result": {
-        "item": "minecraft:dirt_path",
-        "count": 1
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:clay" }
+  ],
+  "result": {
+    "id": "minecraft:gunpowder",
+    "count": 16,
+    "components": {
+      "custom_data": {
+        "custom_model_data": 1000
+      }
     }
+  }
 }

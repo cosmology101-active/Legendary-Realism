@@ -1,11 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    { "item": "minecraft:clay" }
-  ],
+  "ingredients": [{ "item": "minecraft:clay" }],
   "result": {
     "item": "minecraft:gunpowder",
-    "count": 16,
-    "nbt": "{CustomModelData:1000, display: {Name: '{\"text\":\"Ocean Sediment\"}'}}"
+    "count": 16
   }
 }

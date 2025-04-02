@@ -1,1 +1,1 @@
-give @p minecraft:gunpowder{CustomModelData:1000, display: {Name: '{"text":"Ocean Sediment"}'}} 16
+/give @p minecraft:gunpowder{components: {"minecraft:custom_data": {custom_model_data: 1000}, "minecraft:display": {Name: '{"text":"Ocean Sediment","italic":false}'}}}

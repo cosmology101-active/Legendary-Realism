@@ -4,9 +4,7 @@
     "C"
   ],
   "key": {
-    "C": {
-      "item": "minecraft:clay"
-    }
+    "C": "minecraft:clay"
   },
   "result": {
     "id": "minecraft:gunpowder",

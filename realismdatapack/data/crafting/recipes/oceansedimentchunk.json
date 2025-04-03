@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sediment_compression",
+  "pattern": [
+    "SSS",
+    " F ",
+    "   "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:gunpowder",
+      "components": {
+        "minecraft:custom_data": {
+          "custom_model_data": 1001
+        }
+      }
+    },
+    "F": {
+      "item": "minecraft:flint_and_steel"
+    }
+  },
+  "result": {
+    "id": "minecraft:gunpowder",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "custom_model_data": 1002
+      },
+      "minecraft:display": {
+        "Name": "{\"text\":\"Sediment Chunk\",\"italic\":false,\"color\":\"dark_aqua\"}"
+      },
+      "minecraft:rarity": "rare"
+    }
+  }
+}

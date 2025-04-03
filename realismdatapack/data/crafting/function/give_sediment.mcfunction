@@ -1,1 +1,1 @@
-/give @p minecraft:gunpowder{components: {"minecraft:custom_data": {custom_model_data: 1000}, "minecraft:display": {Name: '{"text":"Ocean Sediment","italic":false}'}}}
+/give @p gunpowder[custom_name=[{"text":"Ocean Sediment","italic":false,"color":"aqua"}],item_name=[{"text":"Ocean Sediment","italic":false,"color":"aqua"}],rarity=uncommon,custom_model_data=1001]

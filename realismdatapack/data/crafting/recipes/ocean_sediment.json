@@ -1,7 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "group": "ocean_sediment",
   "ingredients": [
     {
       "item": "minecraft:clay"
@@ -14,13 +12,12 @@
       "minecraft:custom_data": {
         "custom_model_data": 1001
       },
-      "minecraft:display": {
-        "Name": "{\"text\":\"Ocean Sediment\",\"italic\":false,\"color\":\"aqua\"}"
-      },
-      "minecraft:rarity": "uncommon",
-      "minecraft:lore": [
-        "{\"text\":\"Formed from ancient ocean deposits\",\"color\":\"dark_aqua\"}"
-      ]
+      "minecraft:custom_name": {
+        "text": "Ocean Sediment",
+        "italic": false,
+        "color": "aqua"
+      }
+      "minecraft:rarity": "uncommon"
     }
   }
 }

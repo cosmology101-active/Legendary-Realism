@@ -1,15 +1,26 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ocean_sediment",
   "ingredients": [
-    { "item": "minecraft:clay" }
+    {
+      "item": "minecraft:clay"
+    }
   ],
   "result": {
     "id": "minecraft:gunpowder",
     "count": 16,
     "components": {
-      "custom_data": {
+      "minecraft:custom_data": {
         "custom_model_data": 1001
-      }
+      },
+      "minecraft:display": {
+        "Name": "{\"text\":\"Ocean Sediment\",\"italic\":false,\"color\":\"aqua\"}"
+      },
+      "minecraft:rarity": "uncommon",
+      "minecraft:lore": [
+        "{\"text\":\"Formed from ancient ocean deposits\",\"color\":\"dark_aqua\"}"
+      ]
     }
   }
 }

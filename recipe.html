@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Recipe Details</h1>
+    <div id="recipe-container"></div>
+    <a href="index.html">Back to All Recipes</a>
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const recipeName = urlParams.get("recipe");
+            if (recipeName) {
+                fetch(`data/mypack/recipe/${recipeName}.json`)
+                    .then(response => response.json())
+                    .then(recipe => renderRecipe(recipe, document.getElementById("recipe-container")))
+                    .catch(error => console.error("Error loading recipe:", error));
+            }
+        });
+    </script>
+</body>
+</html>

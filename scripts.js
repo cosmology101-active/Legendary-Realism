@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
+    // Prevent duplicate renders by checking a flag
+    if (container.dataset.rendered) {
+        console.log("Recipe already rendered, skipping...");
+        return;
+    }
+
     if (window.location.pathname.endsWith("recipe.html")) {
         const urlParams = new URLSearchParams(window.location.search);
         const recipeName = urlParams.get("recipe");
@@ -14,7 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (!response.ok) throw new Error(`Failed to load data/crafting/recipe/${recipeName}.json: ${response.status}`);
                     return response.json();
                 })
-                .then(recipe => renderRecipe(recipe, container, recipeName))
+                .then(recipe => {
+                    renderRecipe(recipe, container, recipeName);
+                    container.dataset.rendered = "true"; // Mark as rendered
+                })
                 .catch(error => {
                     console.error("Error loading recipe:", error);
                     const errorDiv = document.createElement("div");
@@ -99,8 +108,7 @@ function renderRecipe(recipe, container, recipeName) {
     output.className = "output";
     const outputImg = document.createElement("img");
     const resultName = recipe.result.components["minecraft:custom_name"].text;
-    // Use the recipeName (file name) for custom item image, not base ID
-    const outputImgName = recipeName; // e.g., "ocean_sediment", "fire"
+    const outputImgName = recipeName; // Use recipeName for custom item image
     outputImg.src = `assets/minecraft/textures/item/${outputImgName}.png`;
     outputImg.alt = resultName;
     outputImg.title = resultName;

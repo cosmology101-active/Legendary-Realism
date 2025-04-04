@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (!response.ok) throw new Error(`Failed to load data/crafting/recipe/${recipeName}.json: ${response.status}`);
                     return response.json();
                 })
-                .then(recipe => renderRecipe(recipe, container))
+                .then(recipe => renderRecipe(recipe, container, recipeName))
                 .catch(error => {
                     console.error("Error loading recipe:", error);
                     const errorDiv = document.createElement("div");
@@ -30,7 +30,7 @@ function formatName(name) {
     return name.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 }
 
-function renderRecipe(recipe, container) {
+function renderRecipe(recipe, container, recipeName) {
     console.log("Rendering recipe:", recipe.result.components["minecraft:custom_name"].text);
     const div = document.createElement("div");
     div.className = "recipe";
@@ -99,10 +99,15 @@ function renderRecipe(recipe, container) {
     output.className = "output";
     const outputImg = document.createElement("img");
     const resultName = recipe.result.components["minecraft:custom_name"].text;
-    outputImg.src = `assets/minecraft/textures/item/${recipe.result.id.split(":")[1]}.png`;
+    // Use the recipeName (file name) for custom item image, not base ID
+    const outputImgName = recipeName; // e.g., "ocean_sediment", "fire"
+    outputImg.src = `assets/minecraft/textures/item/${outputImgName}.png`;
     outputImg.alt = resultName;
     outputImg.title = resultName;
-    outputImg.onerror = () => { outputImg.replaceWith(document.createTextNode(resultName)); };
+    outputImg.onerror = () => { 
+        console.error("Failed to load output image for", resultName, "at", outputImg.src);
+        outputImg.replaceWith(document.createTextNode(resultName)); 
+    };
     output.appendChild(outputImg);
     output.append(` x${recipe.result.count}`);
     div.appendChild(output);

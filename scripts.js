@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 .catch(error => {
                     console.error("Error loading recipe:", error);
                     const errorDiv = document.createElement("div");
-                    errorDiv.className = "error";
+                    errorDiv.className = "error");
                     errorDiv.textContent = `Error loading recipe: ${recipeName}.json - ${error.message}`;
                     container.appendChild(errorDiv);
                 });
@@ -76,7 +76,7 @@ function renderRecipe(recipe, container) {
             }
 
             const link = document.createElement("a");
-            link.href = linkUrl || "#"; // Default to "#" if no URL, to ensure clickability
+            link.href = linkUrl || "#"; // Ensure clickable, even if empty
             const img = document.createElement("img");
             img.src = imgSrc;
             img.alt = altText;
@@ -87,6 +87,8 @@ function renderRecipe(recipe, container) {
             };
             link.appendChild(img);
             slot.appendChild(link);
+        } else {
+            console.log("Empty slot for symbol:", symbol);
         }
         grid.appendChild(slot);
     });
@@ -94,7 +96,7 @@ function renderRecipe(recipe, container) {
     div.appendChild(grid);
 
     const output = document.createElement("div");
-    output.className = "output";
+    output.className = "output");
     const outputImg = document.createElement("img");
     const resultName = recipe.result.components["minecraft:custom_name"].text;
     outputImg.src = `assets/minecraft/textures/item/${recipe.result.id.split(":")[1]}.png`;

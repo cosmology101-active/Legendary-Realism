@@ -24,11 +24,13 @@ body {
     width: 50px;
     height: 50px;
     border: 1px solid #ccc;
-    background-color: #e0e0e0;
+    background-color: #e0f0e0;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer; /* Indicates clickable */
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
 }
 
 .slot img {
@@ -42,9 +44,17 @@ body {
     height: 100%;
     text-decoration: none;
     color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .output {
     margin-top: 10px;
     font-weight: bold;
+}
+
+.error {
+    color: red;
+    margin: 10px;
 }

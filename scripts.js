@@ -31,6 +31,7 @@ function formatName(name) {
 }
 
 function renderRecipe(recipe, container) {
+    console.log("Rendering recipe:", recipe.result.components["minecraft:custom_name"].text);
     const div = document.createElement("div");
     div.className = "recipe";
 
@@ -45,11 +46,13 @@ function renderRecipe(recipe, container) {
     const flatPattern = pattern.map(row => row.padEnd(3, " ").split("")).flat();
 
     flatPattern.forEach(symbol => {
+        console.log("Processing symbol:", symbol);
         const slot = document.createElement("div");
         slot.className = "slot";
 
         if (symbol !== " ") {
             const item = recipe.key[symbol];
+            console.log("Item for symbol", symbol, "is:", item);
             let linkUrl = "";
             let imgSrc = "";
             let altText = "";
@@ -57,24 +60,31 @@ function renderRecipe(recipe, container) {
             if (typeof item === "string") {
                 if (item.startsWith("#crafting:")) {
                     const tagName = item.replace("#crafting:", "");
+                    console.log("Found custom item, tagName:", tagName);
                     linkUrl = `recipe.html?recipe=${tagName}`;
                     imgSrc = `assets/minecraft/textures/item/${tagName}.png`;
                     altText = formatName(tagName);
                 } else {
                     const itemName = item.split(":")[1];
+                    console.log("Found vanilla item, itemName:", itemName);
                     linkUrl = "vanilla_items.html";
                     imgSrc = `assets/minecraft/textures/item/${itemName}.png`;
                     altText = formatName(itemName);
                 }
+            } else {
+                console.error("Unexpected item type for symbol", symbol, item);
             }
 
             const link = document.createElement("a");
-            link.href = linkUrl;
+            link.href = linkUrl || "#"; // Default to "#" if no URL, to ensure clickability
             const img = document.createElement("img");
             img.src = imgSrc;
             img.alt = altText;
-            img.title = altText; // Show on hover
-            img.onerror = () => { img.replaceWith(document.createTextNode(altText)); }; // Fallback to text if PNG fails
+            img.title = altText;
+            img.onerror = () => { 
+                console.error("Failed to load image for", altText, "at", imgSrc);
+                img.replaceWith(document.createTextNode(altText)); 
+            };
             link.appendChild(img);
             slot.appendChild(link);
         }
@@ -89,7 +99,7 @@ function renderRecipe(recipe, container) {
     const resultName = recipe.result.components["minecraft:custom_name"].text;
     outputImg.src = `assets/minecraft/textures/item/${recipe.result.id.split(":")[1]}.png`;
     outputImg.alt = resultName;
-    outputImg.title = resultName; // Show on hover
+    outputImg.title = resultName;
     outputImg.onerror = () => { outputImg.replaceWith(document.createTextNode(resultName)); };
     output.appendChild(outputImg);
     output.append(` x${recipe.result.count}`);

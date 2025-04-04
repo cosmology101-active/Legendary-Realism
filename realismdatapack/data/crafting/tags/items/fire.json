@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:blaze_powder",
+      "required_components": {
+        "minecraft:custom_data": {
+          "custom_model_data": 1002
+        }
+      }
+    }
+  ]
+}

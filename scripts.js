@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 .catch(error => {
                     console.error("Error loading recipe:", error);
                     const errorDiv = document.createElement("div");
-                    errorDiv.className = "error");
+                    errorDiv.className = "error";
                     errorDiv.textContent = `Error loading recipe: ${recipeName}.json - ${error.message}`;
                     container.appendChild(errorDiv);
                 });

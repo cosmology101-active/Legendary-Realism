@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 .catch(error => {
                     console.error("Error loading recipe:", error);
                     const errorDiv = document.createElement("div");
-                    errorDiv.className = "error";
+                    errorDiv.className = "error");
                     errorDiv.textContent = `Error loading recipe: ${recipeName}.json - ${error.message}`;
                     container.appendChild(errorDiv);
                 });
@@ -58,15 +58,34 @@ function renderRecipe(recipe, container) {
             let altText = "";
 
             if (typeof item === "string") {
+                // Handle string-based items (older format)
                 if (item.startsWith("#crafting:")) {
                     const tagName = item.replace("#crafting:", "");
-                    console.log("Found custom item, tagName:", tagName);
+                    console.log("Found custom item (string), tagName:", tagName);
                     linkUrl = `recipe.html?recipe=${tagName}`;
                     imgSrc = `assets/minecraft/textures/item/${tagName}.png`;
                     altText = formatName(tagName);
                 } else {
                     const itemName = item.split(":")[1];
-                    console.log("Found vanilla item, itemName:", itemName);
+                    console.log("Found vanilla item (string), itemName:", itemName);
+                    linkUrl = "vanilla_items.html";
+                    imgSrc = `assets/minecraft/textures/item/${itemName}.png`;
+                    altText = formatName(itemName);
+                }
+            } else if (item && typeof item === "object" && item.id) {
+                // Handle object-based items (new format)
+                const itemName = item.id.split(":")[1];
+                console.log("Found object-based item, itemName:", itemName);
+                if (item.components && item.components["minecraft:custom_data"]) {
+                    // Custom item with components (e.g., ocean_sediment, fire)
+                    const customName = itemName; // Use base ID as key for now; adjust if custom names are provided
+                    console.log("Custom item with components, using:", customName);
+                    linkUrl = `recipe.html?recipe=${customName}`;
+                    imgSrc = `assets/minecraft/textures/item/${customName}.png`;
+                    altText = formatName(customName);
+                } else {
+                    // Vanilla item without custom components
+                    console.log("Vanilla item without components, itemName:", itemName);
                     linkUrl = "vanilla_items.html";
                     imgSrc = `assets/minecraft/textures/item/${itemName}.png`;
                     altText = formatName(itemName);

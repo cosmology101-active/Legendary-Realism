@@ -5,8 +5,10 @@
   },
   "overrides": [
     {
-      "predicate": { "custom_model_data": 1001 },
-      "model": "item/ocean_sediment"
+      "predicate": {
+        "custom_model_data": 1001
+      },
+      "model": "minecraft:item/ocean_sediment"
     }
   ]
 }

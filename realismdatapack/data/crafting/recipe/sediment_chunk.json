@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SSS",
+    " F "
+  ],
+  "key": {
+    "S": {
+      "id": "minecraft:gunpowder",
+      "components": {
+        "minecraft:custom_data": {
+          "custom_model_data": 1001
+        }
+      }
+    },
+    "F": {
+      "id": "minecraft:blaze_powder",
+      "components": {
+        "minecraft:custom_data": {
+          "custom_model_data": 1002
+        }
+      }
+    }
+  },
+  "result": {
+    "id": "minecraft:coal",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "custom_model_data": 1003
+      },
+      "minecraft:custom_name": {
+        "text": "Sediment Chunk",
+        "italic": false,
+        "color": "aqua"
+      },
+      "minecraft:lore": [
+        {
+          "text": "ocean",
+          "italic": false,
+          "color": "blue"
+        }
+      ]
+    }
+  }
+}

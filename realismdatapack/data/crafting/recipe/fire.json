@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " B ",
+    "NNN"
+  ],
+  "key": {
+    "N": "minecraft:netherrack",
+    "B": "minecraft:blaze_powder"
+  },
+  "result": {
+    "id": "minecraft:feather",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "custom_model_data": 1002
+      },
+      "minecraft:custom_name": {
+        "text": "Fire",
+        "italic": false,
+        "color": "red"
+      }
+    }
+  }
+}

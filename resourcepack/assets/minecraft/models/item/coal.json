@@ -6,7 +6,7 @@
   "overrides": [
     {
       "predicate": {
-        "custom_model_data": 1001
+        "custom_model_data": 1003
       },
       "model": "minecraft:item/sediment_chunk"
     }

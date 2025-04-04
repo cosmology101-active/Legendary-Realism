@@ -9,19 +9,10 @@
 <body>
     <h1>Recipe Details</h1>
     <div id="recipe-container"></div>
-    <a href="items.html">Back to Custom Items</a>
+    <div id="sample-text">
+        <p>This is sample text you can customize later. Add details about the item, its uses, or anything else here!</p>
+    </div>
+    <a href="/Legendary-Realism/items.html">Back to Custom Items</a>
     <script src="scripts.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const recipeName = urlParams.get("recipe");
-            if (recipeName) {
-                fetch(`data/crafting/recipe/${recipeName}.json`)
-                    .then(response => response.json())
-                    .then(recipe => renderRecipe(recipe, document.getElementById("recipe-container")))
-                    .catch(error => console.error("Error loading recipe:", error));
-            }
-        });
-    </script>
 </body>
 </html>

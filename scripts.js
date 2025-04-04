@@ -1,17 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname.endsWith("index.html") || window.location.pathname === "/minecraft-datapack/") {
         const recipes = [
-            "data/mypack/recipe/ocean_sediment.json",
-            "data/mypack/recipe/fire.json",
-            "data/mypack/recipe/sediment_chunk.json"
+            "data/crafting/recipe/ocean_sediment.json",
+            "data/crafting/recipe/fire.json",
+            "data/crafting/recipe/sediment_chunk.json"
         ];
         const container = document.getElementById("recipe-container");
 
         recipes.forEach(url => {
             fetch(url)
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) throw new Error(`Failed to load ${url}: ${response.status}`);
+                    return response.json();
+                })
                 .then(recipe => renderRecipe(recipe, container))
-                .catch(error => console.error(`Error loading ${url}:`, error));
+                .catch(error => {
+                    console.error(`Error loading ${url}:`, error);
+                    const errorDiv = document.createElement("div");
+                    errorDiv.className = "error";
+                    errorDiv.textContent = `Error loading recipe: ${url.split("/").pop()} - Check console for details.`;
+                    container.appendChild(errorDiv);
+                });
         });
     }
 });
@@ -37,23 +46,23 @@ function renderRecipe(recipe, container) {
         if (symbol !== " ") {
             const item = recipe.key[symbol];
             let linkUrl = "";
-            let displayContent = "";
+            let displayText = "";
 
             if (typeof item === "string") {
-                if (item.startsWith("#mypack:")) {
-                    const tagName = item.replace("#mypack:", "");
+                if (item.startsWith("#crafting:")) {  // Updated tag prefix
+                    const tagName = item.replace("#crafting:", "");
                     linkUrl = `recipe.html?recipe=${tagName}`;
-                    displayContent = `<img src="assets/minecraft/textures/item/${tagName}.png" alt="${tagName}">`;
+                    displayText = tagName;
                 } else {
                     const itemName = item.split(":")[1];
                     linkUrl = `recipe.html?recipe=${itemName}`;
-                    displayContent = `<img src="assets/minecraft/textures/item/${itemName}.png" alt="${itemName}">`;
+                    displayText = itemName;
                 }
             }
 
             const link = document.createElement("a");
             link.href = linkUrl;
-            link.innerHTML = displayContent || symbol;
+            link.textContent = displayText || symbol;
             slot.appendChild(link);
         }
         grid.appendChild(slot);
@@ -63,11 +72,7 @@ function renderRecipe(recipe, container) {
 
     const output = document.createElement("div");
     output.className = "output";
-    const outputImg = document.createElement("img");
-    outputImg.src = `assets/minecraft/textures/item/${recipe.result.id.split(":")[1]}.png`;
-    outputImg.alt = recipe.result.components["minecraft:custom_name"].text;
-    output.appendChild(outputImg);
-    output.append(` x${recipe.result.count}`);
+    output.textContent = `${recipe.result.components["minecraft:custom_name"].text} x${recipe.result.count}`;
     div.appendChild(output);
 
     container.appendChild(div);

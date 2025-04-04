@@ -16,7 +16,7 @@
             const urlParams = new URLSearchParams(window.location.search);
             const recipeName = urlParams.get("recipe");
             if (recipeName) {
-                fetch(`data/mypack/recipe/${recipeName}.json`)
+                fetch(`data/crafting/recipe/${recipeName}.json`)
                     .then(response => response.json())
                     .then(recipe => renderRecipe(recipe, document.getElementById("recipe-container")))
                     .catch(error => console.error("Error loading recipe:", error));

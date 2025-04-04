@@ -10,7 +10,7 @@
     "B": "minecraft:blaze_powder"
   },
   "result": {
-    "id": "minecraft:feather",
+    "id": "minecraft:blaze_powder",
     "count": 1,
     "components": {
       "minecraft:custom_data": {

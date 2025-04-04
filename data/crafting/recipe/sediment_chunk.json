@@ -6,22 +6,8 @@
     " F "
   ],
   "key": {
-    "S": {
-      "id": "minecraft:gunpowder",
-      "components": {
-        "minecraft:custom_data": {
-          "custom_model_data": 1001
-        }
-      }
-    },
-    "F": {
-      "id": "minecraft:blaze_powder",
-      "components": {
-        "minecraft:custom_data": {
-          "custom_model_data": 1002
-        }
-      }
-    }
+    "S": "#crafting:ocean_sediment",
+    "F": "#crafting:fire"
   },
   "result": {
     "id": "minecraft:coal",

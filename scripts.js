@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    if (window.location.pathname.endsWith("index.html") || window.location.pathname === "/minecraft-datapack/") {
+    if (window.location.pathname.endsWith("index.html") || window.location.pathname === "/Legendary-Realism/") {
         const recipes = [
             "data/crafting/recipe/ocean_sediment.json",
             "data/crafting/recipe/fire.json",
@@ -49,7 +49,7 @@ function renderRecipe(recipe, container) {
             let displayText = "";
 
             if (typeof item === "string") {
-                if (item.startsWith("#crafting:")) {  // Updated tag prefix
+                if (item.startsWith("#crafting:")) {
                     const tagName = item.replace("#crafting:", "");
                     linkUrl = `recipe.html?recipe=${tagName}`;
                     displayText = tagName;

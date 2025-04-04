@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "mysql:item/generated",
   "textures": {
     "layer0": "minecraft:item/ocean_sediment"
   }

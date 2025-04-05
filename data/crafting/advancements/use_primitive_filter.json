@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "crafted_filtered_water": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe": "crafting:filtered_water"
+      }
+    }
+  },
+  "rewards": {
+    "function": "crafting:damage_primitive_filter"
+  }
+}

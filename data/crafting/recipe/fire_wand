@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SFS",
+    "ICI",
+    "ICI"
+  ],
+  "key": {
+    "C": "#crafting:charred_wood",
+    "F": "#crafting:fire",
+    "I": "#crafting:inferno",
+    "S": "#crafting:flaming_sediment"
+  },
+  "result": {
+    "id": "minecraft:coal",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "custom_model_data": 1010
+      },
+      "minecraft:custom_name": {
+        "text": "Fire Wand",
+        "italic": false,
+        "color": "red"
+      },
+      "minecraft:lore": [
+        {
+          "text": "a stick but firey",
+          "italic": true,
+          "color": "orange"
+        }
+      ]
+    }
+  }
+}

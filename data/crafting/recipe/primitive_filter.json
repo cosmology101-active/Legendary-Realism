@@ -15,7 +15,7 @@
     "count": 1,
     "components": {
       "minecraft:custom_data": {
-        "custom_model_data": 1004
+        "custom_model_data": 1006
       },
       "minecraft:custom_name": {
         "text": "Primitive Filter",

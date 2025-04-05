@@ -9,7 +9,7 @@
     "F": "#crafting:primitive_filter"
   },
   "result": {
-    "id": "minecraft:water_bucket",
+    "id": "minecraft:glass_bottle",
     "count": 1,
     "components": {
       "minecraft:custom_data": {

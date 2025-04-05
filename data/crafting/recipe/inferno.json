@@ -8,7 +8,7 @@
   "key": {
     "L": "minecraft:lava_bucket",
     "F": "#crafting:fire",
-    "O": "minecraft:obsidian"
+    "O": "minecraft:obsidian",
   },
   "result": {
     "id": "minecraft:coal",

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FO"
+  ],
+  "key": {
+    "F": "#crafting:flaming_sediment"
+    "O": "#crafting:omni_wood"
+  },
+  "result": {
+    "id": "minecraft:gunpowder",
+    "count": 16,
+    "components": {
+      "minecraft:custom_data": {
+        "custom_model_data": 1009
+      },
+      "minecraft:custom_name": {
+        "text": "Charred Wood",
+        "italic": false,
+        "color": "black"
+      }
+    }
+  }
+}

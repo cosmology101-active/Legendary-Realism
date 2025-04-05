@@ -27,9 +27,6 @@
           "color": "blue"
         }
       ],
-      "minecraft:bucket": {
-        "can_place": false
-      }
     }
   },
   "show_notification": false,

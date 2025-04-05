@@ -4,9 +4,7 @@
     {
       "id": "minecraft:gunpowder",
       "required_components": {
-        "minecraft:custom_data": {
-          "custom_model_data": 1001
-        }
+        "minecraft:custom_data": {"custom_model_data": 1001}
       }
     }
   ]

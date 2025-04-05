@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "minecraft:coal",
+      "required_components": {
+        "minecraft:custom_data": {"custom_model_data": 1008}
+      }
+    }
+  ]
+}

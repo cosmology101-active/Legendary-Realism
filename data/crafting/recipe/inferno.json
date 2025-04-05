@@ -11,7 +11,7 @@
         "O": "minecraft:obsidian"
     },
     "result": {
-        "id": "minecraft:coal",
+        "id": "minecraft:gunpowder",
         "count": 2,
         "components": {
             "minecraft:custom_data": {

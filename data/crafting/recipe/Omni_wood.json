@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OBD",
+    "SJC",
+    "AMP"
+  ],
+  "key": {
+    "O": "minecraft:oak_log",
+    "B": "minecraft:birch_log",
+    "D": "minecraft:dark_oak_log",
+    "S": "minecraft:spruce_log",
+    "J": "minecraft:jungle_log",
+    "C": "minecraft:cherry_log",
+    "A": "minecraft:acacia_log",
+    "M": "minecraft:mangrove_log",
+    "P": "minecraft:pale_oak_log"
+  },
+  "result": {
+    "id": "minecraft:coal",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "custom_model_data": 1007
+      },
+      "minecraft:custom_name": {
+        "text": "Omni-wood",
+        "italic": false,
+        "color": "brown"
+      },
+      "minecraft:lore": [
+        {
+          "text": "the master of all woods",
+          "italic": true,
+          "color": "blue"
+        }
+      ]
+    }
+  }
+}

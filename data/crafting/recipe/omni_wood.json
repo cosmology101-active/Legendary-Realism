@@ -17,7 +17,7 @@
     "P": "minecraft:pale_oak_log"
   },
   "result": {
-    "id": "minecraft:coal",
+    "id": "minecraft:gunpowder",
     "count": 1,
     "components": {
       "minecraft:custom_data": {

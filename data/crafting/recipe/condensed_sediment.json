@@ -6,8 +6,8 @@
     "CFC"
   ],
   "key": {
-    "C": "#crafting:sediment_chunk"
-    "O": "minecraft:obsidian"
+    "C": "#crafting:sediment_chunk",
+    "O": "minecraft:obsidian",
     "I": "minecraft:iron_block"
   },
   "result": {

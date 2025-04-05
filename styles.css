@@ -63,14 +63,6 @@ body {
     font-style: italic;
     color: #555;
 }
-#recipe-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Space between items */
-    margin: 20px 0; /* Vertical spacing around the list */
-}
-
 #recipe-list a {
     text-decoration: none; /* Remove underline from links */
     color: #007bff; /* Blue link color, adjust as needed */
@@ -79,4 +71,26 @@ body {
 
 #recipe-list a:hover {
     text-decoration: underline; /* Underline on hover for feedback */
+}
+/* General link styling for all pages */
+a {
+    text-decoration: none; /* Remove underline by default */
+    color: #007bff; /* Nice blue color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Specific styling for recipe list on items.html */
+#recipe-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between items */
+    margin: 20px 0; /* Vertical spacing around the list */
+}
+
+#recipe-list div {
+    font-size: 1.2em; /* Slightly larger text, moved from a to div */
 }

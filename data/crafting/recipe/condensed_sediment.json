@@ -1,30 +1,31 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "SSS",
-    "SSS",
-    " F "
+    "COC",
+    "OIO",
+    "CFC"
   ],
   "key": {
-    "S": "#crafting:ocean_sediment",
-    "F": "#crafting:fire"
+    "C": "#crafting:sediment_chunk"
+    "O": "minecraft:obsidian"
+    "I": "minecraft:iron_block"
   },
   "result": {
     "id": "minecraft:coal",
     "count": 1,
     "components": {
       "minecraft:custom_data": {
-        "custom_model_data": 1003
+        "custom_model_data": 1004
       },
       "minecraft:custom_name": {
-        "text": "Sediment Chunk",
+        "text": "Condensed Sediment",
         "italic": false,
-        "color": "aqua"
+        "color": "yellow"
       },
       "minecraft:lore": [
         {
-          "text": "ocean",
-          "italic": false,
+          "text": "sediment but stronger",
+          "italic": true,
           "color": "blue"
         }
       ]

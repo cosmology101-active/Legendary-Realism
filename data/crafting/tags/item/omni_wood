@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     {
-      "id": "minecraft:coal",
+      "id": "minecraft:gunpowder",
       "required_components": {
         "minecraft:custom_data": {"custom_model_data": 1008}
       }

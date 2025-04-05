@@ -14,15 +14,15 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 50px);
+    grid-template-columns: repeat(3, 70px); /* Increased from 50px to fit 64px images */
     grid-gap: 2px;
     margin: 10px auto;
-    width: 156px;
+    width: 216px; /* 3 * 70px + 2 * 2px gap = 214px, rounded up */
 }
 
 .slot {
-    width: 50px;
-    height: 50px;
+    width: 70px; /* Increased from 50px */
+    height: 70px;
     border: 1px solid #ccc;
     background-color: #e0f0e0;
     display: flex;
@@ -34,8 +34,9 @@ body {
 }
 
 .slot img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 64px; /* 4x scale from 16px */
+    height: 64px;
+    image-rendering: pixelated; /* Keep Minecraft crispness */
 }
 
 .slot a {
@@ -52,34 +53,37 @@ body {
 .output {
     margin-top: 10px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between image and text */
+}
+
+.output img {
+    width: 64px; /* 4x scale from 16px */
+    height: 64px;
+    image-rendering: pixelated;
 }
 
 .error {
     color: red;
     margin: 10px;
 }
+
 #sample-text {
     margin-top: 20px;
     font-style: italic;
     color: #555;
 }
-#recipe-list a {
-    text-decoration: none; /* Remove underline from links */
-    color: #007bff; /* Blue link color, adjust as needed */
-    font-size: 1.2em; /* Slightly larger text */
-}
 
-#recipe-list a:hover {
-    text-decoration: underline; /* Underline on hover for feedback */
-}
 /* General link styling for all pages */
 a {
-    text-decoration: none; /* Remove underline by default */
-    color: #007bff; /* Nice blue color */
+    text-decoration: none;
+    color: #007bff;
 }
 
 a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
 /* Specific styling for recipe list on items.html */
@@ -87,10 +91,12 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Space between items */
-    margin: 20px 0; /* Vertical spacing around the list */
+    gap: 10px;
+    margin: 20px 0;
 }
 
 #recipe-list div {
-    font-size: 1.2em; /* Slightly larger text, moved from a to div */
+    font-size: 1.2em;
 }
+
+/* Remove redundant #recipe-list a styles since they're covered by general a */

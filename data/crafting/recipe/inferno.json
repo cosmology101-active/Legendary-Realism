@@ -1,31 +1,32 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "SSS",
-    "SSS",
-    " F "
+    "FFF",
+    "LOL",
+    "FFF"
   ],
   "key": {
-    "S": "#crafting:ocean_sediment",
+    "L": "minecraft:lava_bucket",
     "F": "#crafting:fire"
+    "O": "minecraft:obsidian"
   },
   "result": {
     "id": "minecraft:coal",
-    "count": 1,
+    "count": 2,
     "components": {
       "minecraft:custom_data": {
-        "custom_model_data": 1003
+        "custom_model_data": 1005
       },
       "minecraft:custom_name": {
-        "text": "Sediment Chunk",
+        "text": "Inferno",
         "italic": false,
-        "color": "aqua"
+        "color": "red"
       },
       "minecraft:lore": [
         {
-          "text": "ocean",
-          "italic": false,
-          "color": "blue"
+          "text": "a blazing fire",
+          "italic": true,
+          "color": "orange"
         }
       ]
     }

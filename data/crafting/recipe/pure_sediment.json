@@ -1,36 +1,36 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "OPO",
-    "FCF",
-    "UFU"
-  ],
-  "key": {
-    "F": "#crafting:filtered_water",
-    "P": "#crafting:primitive_filter",
-    "O": "#crafting:ocean_sediment",
-    "C": "#crafting:condensed_sediment",
-    "U": "#crafting:sediment_chunk"
-  },
-  "result": {
-    "id": "minecraft:water_bucket",
-    "count": 1,
-    "components": {
-      "minecraft:custom_data": {
-        "custom_model_data": 1012
-      },
-      "minecraft:custom_name": {
-        "text": "Pure Sediment",
-        "italic": false,
-        "color": "aqua"
-      },
-      "minecraft:lore": [
-        {
-          "text": "sediment in its cleanest form",
-          "italic": true,
-          "color": "blue"
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "OPO",
+        "FCF",
+        "UFU"
+    ],
+    "key": {
+        "F": "#crafting:filtered_water",
+        "P": "#crafting:primitive_filter",
+        "O": "#crafting:ocean_sediment",
+        "C": "#crafting:condensed_sediment",
+        "U": "#crafting:sediment_chunk"
+    },
+    "result": {
+        "id": "minecraft:water_bucket",
+        "count": 1,
+        "components": {
+            "minecraft:custom_data": {
+                "custom_model_data": 1012
+            },
+            "minecraft:custom_name": {
+                "text": "Pure Sediment",
+                "italic": false,
+                "color": "aqua"
+            },
+            "minecraft:lore": [
+                {
+                    "text": "sediment in its cleanest form",
+                    "italic": true,
+                    "color": "blue"
+                }
+            ]
         }
-      ],
     }
-  }
 }

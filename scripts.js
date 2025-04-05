@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Handle items.html
     if (recipeList && window.location.pathname.endsWith("items.html")) {
-        fetchRecipesFromGitHub();
+        fetchRecipesFromIndex();
     }
 });
 
@@ -125,34 +125,34 @@ function renderRecipe(recipe, container, recipeName) {
     container.appendChild(div);
 }
 
-function fetchRecipesFromGitHub() {
-    const repoUrl = "https://api.github.com/repos/cosmology101-active/Legendary-Realism/contents/data/crafting/recipe";
-    fetch(repoUrl)
+function fetchRecipesFromIndex() {
+    fetch("data/crafting/recipes.json")
         .then(response => {
-            if (!response.ok) throw new Error(`Failed to fetch repo contents: ${response.status}`);
+            if (!response.ok) throw new Error(`Failed to load recipes.json: ${response.status}`);
             return response.json();
         })
-        .then(files => {
+        .then(recipeNames => {
             const recipeList = document.getElementById("recipe-list");
-            files
-                .filter(file => file.name.endsWith(".json"))
-                .forEach(file => {
-                    const recipeName = file.name.replace(".json", "");
-                    fetch(file.download_url)
-                        .then(response => response.json())
-                        .then(recipe => {
-                            const li = document.createElement("li");
-                            const a = document.createElement("a");
-                            a.href = `recipe.html?recipe=${recipeName}`;
-                            a.textContent = recipe.result.components["minecraft:custom_name"].text;
-                            li.appendChild(a);
-                            recipeList.appendChild(li);
-                        })
-                        .catch(error => console.error(`Error loading ${recipeName}:`, error));
-                });
+            recipeNames.forEach(recipeName => {
+                fetch(`data/crafting/recipe/${recipeName}.json`)
+                    .then(response => {
+                        if (!response.ok) throw new Error(`Failed to load ${recipeName}.json: ${response.status}`);
+                        return response.json();
+                    })
+                    .then(recipe => {
+                        const li = document.createElement("li");
+                        const a = document.createElement("a");
+                        a.href = `recipe.html?recipe=${recipeName}`;
+                        a.textContent = recipe.result.components["minecraft:custom_name"].text;
+                        li.appendChild(a);
+                        recipeList.appendChild(li);
+                    })
+                    .catch(error => console.error(`Error loading ${recipeName}:`, error));
+            });
         })
         .catch(error => {
-            console.error("Error fetching recipes from GitHub:", error);
+            console.error("Error fetching recipes from index:", error);
+            const recipeList = document.getElementById("recipe-list");
             const errorLi = document.createElement("li");
             errorLi.textContent = "Failed to load recipes. Please try again later.";
             recipeList.appendChild(errorLi);

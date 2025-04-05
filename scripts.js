@@ -140,12 +140,12 @@ function fetchRecipesFromIndex() {
                         return response.json();
                     })
                     .then(recipe => {
-                        const li = document.createElement("li");
+                        const div = document.createElement("div"); // Changed from <li> to <div>
                         const a = document.createElement("a");
                         a.href = `recipe.html?recipe=${recipeName}`;
                         a.textContent = recipe.result.components["minecraft:custom_name"].text;
-                        li.appendChild(a);
-                        recipeList.appendChild(li);
+                        div.appendChild(a);
+                        recipeList.appendChild(div);
                     })
                     .catch(error => console.error(`Error loading ${recipeName}:`, error));
             });
@@ -153,8 +153,8 @@ function fetchRecipesFromIndex() {
         .catch(error => {
             console.error("Error fetching recipes from index:", error);
             const recipeList = document.getElementById("recipe-list");
-            const errorLi = document.createElement("li");
-            errorLi.textContent = "Failed to load recipes. Please try again later.";
-            recipeList.appendChild(errorLi);
+            const errorDiv = document.createElement("div"); // Changed from <li> to <div>
+            errorDiv.textContent = "Failed to load recipes. Please try again later.";
+            recipeList.appendChild(errorDiv);
         });
 }

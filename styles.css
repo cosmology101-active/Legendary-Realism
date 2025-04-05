@@ -63,3 +63,20 @@ body {
     font-style: italic;
     color: #555;
 }
+#recipe-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between items */
+    margin: 20px 0; /* Vertical spacing around the list */
+}
+
+#recipe-list a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Blue link color, adjust as needed */
+    font-size: 1.2em; /* Slightly larger text */
+}
+
+#recipe-list a:hover {
+    text-decoration: underline; /* Underline on hover for feedback */
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "GGG",
+    " H "
+  ],
+  "key": {
+    "S": "minecraft:sand",
+    "G": "minecraft:gravel",
+    "H": "minecraft:hopper"
+  },
+  "result": {
+    "id": "minecraft:clay",
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": {
+        "custom_model_data": 1004
+      },
+      "minecraft:custom_name": {
+        "text": "Primitive Filter",
+        "italic": false,
+        "color": "green"
+      },
+      "minecraft:lore": [
+        {
+          "text": "A basic filtration device",
+          "italic": false,
+          "color": "gray"
+        }
+      ],
+      "minecraft:damage": 0,
+      "minecraft:max_damage": 5
+    }
+  }
+}

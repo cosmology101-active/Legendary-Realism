@@ -10,7 +10,7 @@
     "L": "minecraft:lava_bucket"
   },
   "result": {
-    "id": "minecraft:blaze_powder",
+    "id": "minecraft:gunpowder",
     "count": 2,
     "components": {
       "minecraft:custom_data": {

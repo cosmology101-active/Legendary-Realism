@@ -1,8 +1,28 @@
-# Increment damage on Primitive Filter in the player's crafting grid
-execute as @a at @s run data modify entity @s Inventory[{Slot:1b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}] components."minecraft:damage" merge value 1b
+# Tag the player who crafted Filtered Water
+tag @s add crafting_player
 
-# Replace filter with air if damage reaches max (5)
-execute as @a at @s if entity @s[nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_data":{custom_model_data:1004b},"minecraft:damage":5b}}]}] run replaceitem entity @s container.1 air
+# Check all crafting slots (0-8 in a 3x3 grid) and damage Primitive Filter
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:0b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}]}] run data modify entity @s Crafting[{Slot:0b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}] components."minecraft:damage" merge value 1b
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:1b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}]}] run data modify entity @s Crafting[{Slot:1b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}] components."minecraft:damage" merge value 1b
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:2b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}]}] run data modify entity @s Crafting[{Slot:2b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}] components."minecraft:damage" merge value 1b
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:3b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}]}] run data modify entity @s Crafting[{Slot:3b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}] components."minecraft:damage" merge value 1b
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:4b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}]}] run data modify entity @s Crafting[{Slot:4b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}] components."minecraft:damage" merge value 1b
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:5b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}]}] run data modify entity @s Crafting[{Slot:5b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}] components."minecraft:damage" merge value 1b
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:6b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}]}] run data modify entity @s Crafting[{Slot:6b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}] components."minecraft:damage" merge value 1b
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:7b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}]}] run data modify entity @s Crafting[{Slot:7b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}] components."minecraft:damage" merge value 1b
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:8b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}]}] run data modify entity @s Crafting[{Slot:8b,components:{"minecraft:custom_data":{custom_model_data:1004b}}}] components."minecraft:damage" merge value 1b
 
-# Reset advancement to allow repeated triggers
+# Break the filter if damage reaches 5 in any slot
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:0b,components:{"minecraft:custom_data":{custom_model_data:1004b},"minecraft:damage":5b}}]}] run replaceitem entity @s container.0 air
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:1b,components:{"minecraft:custom_data":{custom_model_data:1004b},"minecraft:damage":5b}}]}] run replaceitem entity @s container.1 air
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:2b,components:{"minecraft:custom_data":{custom_model_data:1004b},"minecraft:damage":5b}}]}] run replaceitem entity @s container.2 air
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:3b,components:{"minecraft:custom_data":{custom_model_data:1004b},"minecraft:damage":5b}}]}] run replaceitem entity @s container.3 air
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:4b,components:{"minecraft:custom_data":{custom_model_data:1004b},"minecraft:damage":5b}}]}] run replaceitem entity @s container.4 air
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:5b,components:{"minecraft:custom_data":{custom_model_data:1004b},"minecraft:damage":5b}}]}] run replaceitem entity @s container.5 air
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:6b,components:{"minecraft:custom_data":{custom_model_data:1004b},"minecraft:damage":5b}}]}] run replaceitem entity @s container.6 air
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:7b,components:{"minecraft:custom_data":{custom_model_data:1004b},"minecraft:damage":5b}}]}] run replaceitem entity @s container.7 air
+execute as @a[tag=crafting_player] at @s run execute if entity @s[nbt={Crafting:[{Slot:8b,components:{"minecraft:custom_data":{custom_model_data:1004b},"minecraft:damage":5b}}]}] run replaceitem entity @s container.8 air
+
+# Clean up the tag and reset advancement
+tag @a[tag=crafting_player] remove crafting_player
 advancement revoke @a only crafting:use_primitive_filter

@@ -6,6 +6,7 @@
     "CFC"
   ],
   "key": {
+    "F": "#crafting:fire",
     "C": "#crafting:sediment_chunk",
     "O": "minecraft:obsidian",
     "I": "minecraft:iron_block"

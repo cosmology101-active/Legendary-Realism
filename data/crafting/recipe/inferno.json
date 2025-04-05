@@ -15,7 +15,7 @@
         "count": 2,
         "components": {
             "minecraft:custom_data": {
-                "custom_model_data": 1005
+                "custom_model_data": 1007
             },
             "minecraft:custom_name": {
                 "text": "Inferno",

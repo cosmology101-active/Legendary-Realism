@@ -10,5 +10,77 @@
       },
       "model": "minecraft:item/ocean_sediment"
     }
+    {
+      "predicate": {
+        "custom_model_data": 1002
+      },
+      "model": "minecraft:item/ocean_sediment"
+    }
+    {
+      "predicate": {
+        "custom_model_data": 1003
+      },
+      "model": "minecraft:item/ocean_sediment"
+    }
+    {
+      "predicate": {
+        "custom_model_data": 1004
+      },
+      "model": "minecraft:item/ocean_sediment"
+    }
+    {
+      "predicate": {
+        "custom_model_data": 1005
+      },
+      "model": "minecraft:item/ocean_sediment"
+    }
+    {
+      "predicate": {
+        "custom_model_data": 1006
+      },
+      "model": "minecraft:item/ocean_sediment"
+    }
+    {
+      "predicate": {
+        "custom_model_data": 1007
+      },
+      "model": "minecraft:item/ocean_sediment"
+    }
+    {
+      "predicate": {
+        "custom_model_data": 1008
+      },
+      "model": "minecraft:item/ocean_sediment"
+    }
+    {
+      "predicate": {
+        "custom_model_data": 1009
+      },
+      "model": "minecraft:item/ocean_sediment"
+    }
+    {
+      "predicate": {
+        "custom_model_data": 1010
+      },
+      "model": "minecraft:item/ocean_sediment"
+    }
+    {
+      "predicate": {
+        "custom_model_data": 1011
+      },
+      "model": "minecraft:item/ocean_sediment"
+    }
+    {
+      "predicate": {
+        "custom_model_data": 1012
+      },
+      "model": "minecraft:item/ocean_sediment"
+    }
+    {
+      "predicate": {
+        "custom_model_data": 1013
+      },
+      "model": "minecraft:item/ocean_sediment"
+    }
   ]
 }

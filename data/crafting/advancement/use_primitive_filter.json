@@ -3,7 +3,7 @@
     "crafted_filtered_water": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe": "crafting:filtered_water"
+        "recipe_id": "crafting:filtered_water"
       }
     }
   },

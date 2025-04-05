@@ -1,34 +1,34 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "FFF",
-    "LOL",
-    "FFF"
-  ],
-  "key": {
-    "L": "minecraft:lava_bucket",
-    "F": "#crafting:fire",
-    "O": "minecraft:obsidian",
-  },
-  "result": {
-    "id": "minecraft:coal",
-    "count": 2,
-    "components": {
-      "minecraft:custom_data": {
-        "custom_model_data": 1005
-      },
-      "minecraft:custom_name": {
-        "text": "Inferno",
-        "italic": false,
-        "color": "red"
-      },
-      "minecraft:lore": [
-        {
-          "text": "a blazing fire",
-          "italic": true,
-          "color": "orange"
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "LOL",
+        "FFF"
+    ],
+    "key": {
+        "L": "minecraft:lava_bucket",
+        "F": "#crafting:fire",
+        "O": "minecraft:obsidian"
+    },
+    "result": {
+        "id": "minecraft:coal",
+        "count": 2,
+        "components": {
+            "minecraft:custom_data": {
+                "custom_model_data": 1005
+            },
+            "minecraft:custom_name": {
+                "text": "Inferno",
+                "italic": false,
+                "color": "red"
+            },
+            "minecraft:lore": [
+                {
+                    "text": "a blazing fire",
+                    "italic": true,
+                    "color": "orange"
+                }
+            ]
         }
-      ]
     }
-  }
 }

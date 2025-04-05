@@ -1,35 +1,35 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "CIC",
-    "MFM",
-    "CIC"
-  ],
-  "key": {
-    "F": "#crafting:fire",
-    "C": "#crafting:sediment_chunk",
-    "M": "minecraft:magma_block",
-    "I": "#crafting:inferno"
-  },
-  "result": {
-    "id": "minecraft:coal",
-    "count": 1,
-    "components": {
-      "minecraft:custom_data": {
-        "custom_model_data": 1007
-      },
-      "minecraft:custom_name": {
-        "text": "Flaming Sediment",
-        "italic": false,
-        "color": "orange"
-      },
-      "minecraft:lore": [
-        {
-          "text": "endlessly burning sediment",
-          "italic": true,
-          "color": "black"
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "CIC",
+        "MFM",
+        "CIC"
+    ],
+    "key": {
+        "F": "#crafting:fire",
+        "C": "#crafting:sediment_chunk",
+        "M": "minecraft:magma_block",
+        "I": "#crafting:inferno"
+    },
+    "result": {
+        "id": "minecraft:coal",
+        "count": 1,
+        "components": {
+            "minecraft:custom_data": {
+                "custom_model_data": 1007
+            },
+            "minecraft:custom_name": {
+                "text": "Flaming Sediment",
+                "italic": false,
+                "color": "orange"
+            },
+            "minecraft:lore": [
+                {
+                    "text": "endlessly burning sediment",
+                    "italic": true,
+                    "color": "black"
+                }
+            ]
         }
-      ]
     }
-  }
 }

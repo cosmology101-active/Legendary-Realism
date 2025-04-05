@@ -11,7 +11,7 @@
     "H": "minecraft:hopper"
   },
   "result": {
-    "id": "minecraft:clay",
+    "id": "minecraft:gunpowder",
     "count": 1,
     "components": {
       "minecraft:custom_data": {

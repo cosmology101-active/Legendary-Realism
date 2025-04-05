@@ -16,7 +16,7 @@
         "count": 1,
         "components": {
             "minecraft:custom_data": {
-                "custom_model_data": 1007
+                "custom_model_data": 1009
             },
             "minecraft:custom_name": {
                 "text": "Flaming Sediment",

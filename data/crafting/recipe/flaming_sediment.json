@@ -21,7 +21,7 @@
             "minecraft:custom_name": {
                 "text": "Flaming Sediment",
                 "italic": false,
-                "color": "orange"
+                "color": "gold"
             },
             "minecraft:lore": [
                 {

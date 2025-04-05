@@ -1,40 +1,40 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "W",
-    "F"
-  ],
-  "key": {
-    "W": "minecraft:water_bucket",
-    "F": "#crafting:primitive_filter"
-  },
-  "result": {
-    "id": "minecraft:glass_bottle",
-    "count": 1,
-    "components": {
-      "minecraft:custom_data": {
-        "custom_model_data": 1005
-      },
-      "minecraft:custom_name": {
-        "text": "Filtered Water",
-        "italic": false,
-        "color": "aqua"
-      },
-      "minecraft:lore": [
-        {
-          "text": "Clean and safe to use",
-          "italic": false,
-          "color": "blue"
-        }
-      ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "W",
+        "F"
+    ],
+    "key": {
+        "W": "minecraft:water_bucket",
+        "F": "#crafting:primitive_filter"
+    },
+    "result": {
+        "id": "minecraft:glass_bottle",
+        "count": 1,
+        "components": {
+            "minecraft:custom_data": {
+                "custom_model_data": 1005
+            },
+            "minecraft:custom_name": {
+                "text": "Filtered Water",
+                "italic": false,
+                "color": "aqua"
+            },
+            "minecraft:lore": [
+                {
+                    "text": "Clean and safe to use",
+                    "italic": false,
+                    "color": "blue"
+                }
+            ]
+        },
+        "show_notification": false,
+        "group": "filtered_water",
+        "preserve": [
+            {
+                "key": "F",
+                "item": "#crafting:primitive_filter"
+            }
+        ]
     }
-  },
-  "show_notification": false,
-  "group": "filtered_water",
-  "preserve": [
-    {
-      "key": "F",
-      "item": "#crafting:primitive_filter"
-    }
-  ]
 }

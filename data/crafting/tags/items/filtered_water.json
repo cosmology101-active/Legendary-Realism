@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     {
-      "id": "minecraft:water_bucket",
+      "id": "minecraft:glass_bottle",
       "required_components": {
         "minecraft:custom_data": {"custom_model_data": 1005}
       }

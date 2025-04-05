@@ -4,7 +4,7 @@
     {
       "id": "minecraft:water_bucket",
       "required_components": {
-        "minecraft:custom_data": {"custom_model_data": 1012}
+        "minecraft:custom_data": {"custom_model_data": 1005}
       }
     }
   ]

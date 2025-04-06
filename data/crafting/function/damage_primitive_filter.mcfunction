@@ -15,8 +15,8 @@ execute as @a[tag=crafting_player] at @s if data entity @s Inventory[{Slot:8b,id
 # Fallback: Check the cursor (SelectedItem) with component syntax
 execute as @a[tag=crafting_player,tag=!has_filter] at @s if data entity @s SelectedItem{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}} run tag @s add has_filter
 
-# Damage the filter (inventory first, then cursor)
-execute as @a[tag=has_filter] at @s if data entity @s Inventory[{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}] run data modify entity @s Inventory[{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}] components."minecraft:damage" merge value 1b
+# Damage the filter (simplified to avoid slot-specific modify)
+execute as @a[tag=has_filter] at @s if data entity @s Inventory[{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}] run data modify entity @s Inventory[{id:"minecraft:gunpowder"}] components."minecraft:damage" merge value 1b
 execute as @a[tag=has_filter] at @s unless data entity @s Inventory[{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}] if data entity @s SelectedItem{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}} run data modify entity @s SelectedItem.components."minecraft:damage" merge value 1b
 
 # Break the filter if damage reaches 5

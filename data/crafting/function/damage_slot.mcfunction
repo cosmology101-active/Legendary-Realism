@@ -6,17 +6,17 @@ execute if score @s slot matches 0..8 run data modify entity @e[type=item,limit=
 execute if score @s slot matches -1 run data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}}] Item.components."minecraft:damage" set from entity @s SelectedItem.components."minecraft:damage"
 execute as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}}] at @s run data modify entity @s Item.components."minecraft:damage" merge value 1b
 
-# Replace the item in the player's inventory
-execute if score @s slot matches 0 run loot replace entity @s container.0 mine ~ ~ ~ air{drop_contents:1b}
-execute if score @s slot matches 1 run loot replace entity @s container.1 mine ~ ~ ~ air{drop_contents:1b}
-execute if score @s slot matches 2 run loot replace entity @s container.2 mine ~ ~ ~ air{drop_contents:1b}
-execute if score @s slot matches 3 run loot replace entity @s container.3 mine ~ ~ ~ air{drop_contents:1b}
-execute if score @s slot matches 4 run loot replace entity @s container.4 mine ~ ~ ~ air{drop_contents:1b}
-execute if score @s slot matches 5 run loot replace entity @s container.5 mine ~ ~ ~ air{drop_contents:1b}
-execute if score @s slot matches 6 run loot replace entity @s container.6 mine ~ ~ ~ air{drop_contents:1b}
-execute if score @s slot matches 7 run loot replace entity @s container.7 mine ~ ~ ~ air{drop_contents:1b}
-execute if score @s slot matches 8 run loot replace entity @s container.8 mine ~ ~ ~ air{drop_contents:1b}
-execute if score @s slot matches -1 run loot replace entity @s weapon.mainhand mine ~ ~ ~ air{drop_contents:1b}
+# Replace the item in the player's inventory with the modified spawned item
+execute if score @s slot matches 0 as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}}] at @s run loot replace entity @p container.0 loot minecraft:entities/item
+execute if score @s slot matches 1 as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}}] at @s run loot replace entity @p container.1 loot minecraft:entities/item
+execute if score @s slot matches 2 as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}}] at @s run loot replace entity @p container.2 loot minecraft:entities/item
+execute if score @s slot matches 3 as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}}] at @s run loot replace entity @p container.3 loot minecraft:entities/item
+execute if score @s slot matches 4 as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}}] at @s run loot replace entity @p container.4 loot minecraft:entities/item
+execute if score @s slot matches 5 as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}}] at @s run loot replace entity @p container.5 loot minecraft:entities/item
+execute if score @s slot matches 6 as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}}] at @s run loot replace entity @p container.6 loot minecraft:entities/item
+execute if score @s slot matches 7 as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}}] at @s run loot replace entity @p container.7 loot minecraft:entities/item
+execute if score @s slot matches 8 as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}}] at @s run loot replace entity @p container.8 loot minecraft:entities/item
+execute if score @s slot matches -1 as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}}] at @s run loot replace entity @p weapon.mainhand loot minecraft:entities/item
 
 # Break if damage reaches 5
 execute if score @s slot matches 0 if data entity @s Inventory[{Slot:0b,id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004},"minecraft:damage":5}}] run replaceitem entity @s container.0 air

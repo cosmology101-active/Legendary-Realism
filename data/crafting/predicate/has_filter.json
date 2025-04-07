@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "items": ["minecraft:gunpowder"],
+        "components": {
+          "minecraft:custom_data": { "custom_model_data": 1004 }
+        }
+      }
+    }
+  }
+}

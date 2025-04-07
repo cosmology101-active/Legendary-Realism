@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C"
+  ],
+  "key": {
+    "C": "minecraft:mud"
+  },
+  "result": {
+    "id": "minecraft:gunpowder",
+    "count": 16,
+    "components": {
+      "minecraft:custom_data": {
+        "custom_model_data": 1010
+      },
+      "minecraft:custom_name": {
+        "text": "Ocean Sediment",
+        "italic": false,
+        "color": "aqua"
+      }
+    }
+  }
+}

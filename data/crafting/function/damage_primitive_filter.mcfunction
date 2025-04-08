@@ -52,7 +52,8 @@ execute as @a[tag=crafting_player] at @s if data entity @s Inventory[{Slot:8b,id
 
 # Remove the filter from each slot if damage is 5 or greater
 # Slot 0
-execute as @a[tag=crafting_player,nbt={Inventory:[{Slot:0b,id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}]}] if score @s filter_damage matches 5.. run replaceitem entity @s container.0 air
+execute as @a[tag=crafting_player,nbt={Inventory:[{Slot:0b,id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}]}] run tag @s add filter_to_remove
+execute as @a[tag=filter_to_remove] if score @s filter_damage matches 5.. run replaceitem entity @s container.0 air
 # Slot 1
 execute as @a[tag=crafting_player,nbt={Inventory:[{Slot:1b,id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}]}] if score @s filter_damage matches 5.. run replaceitem entity @s container.1 air
 # Slot 2

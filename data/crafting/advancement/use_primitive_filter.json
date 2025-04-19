@@ -1,9 +1,14 @@
 {
   "criteria": {
-    "crafted_filtered_water": {
-      "trigger": "minecraft:recipe_crafted",
+    "crafted_item": {
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "recipe_id": "crafting:filtered_water"
+        "items": [
+          {
+            "items": ["minecraft:gunpowder"],
+            "nbt": "{custom_model_data:1004}"
+          }
+        ]
       }
     }
   },

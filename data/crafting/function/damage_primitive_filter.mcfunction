@@ -2,15 +2,15 @@
 tag @s add crafting_player
 
 # Clear all items from the crafting grid (slots 0-8)
-execute as @a[tag=crafting_player] at @s run replaceitem entity @s container.0 air
-execute as @a[tag=crafting_player] at @s run replaceitem entity @s container.1 air
-execute as @a[tag=crafting_player] at @s run replaceitem entity @s container.2 air
-execute as @a[tag=crafting_player] at @s run replaceitem entity @s container.3 air
-execute as @a[tag=crafting_player] at @s run replaceitem entity @s container.4 air
-execute as @a[tag=crafting_player] at @s run replaceitem entity @s container.5 air
-execute as @a[tag=crafting_player] at @s run replaceitem entity @s container.6 air
-execute as @a[tag=crafting_player] at @s run replaceitem entity @s container.7 air
-execute as @a[tag=crafting_player] at @s run replaceitem entity @s container.8 air
+execute as @a[tag=crafting_player] run replaceitem entity @s container.0 air
+execute as @a[tag=crafting_player] run replaceitem entity @s container.1 air
+execute as @a[tag=crafting_player] run replaceitem entity @s container.2 air
+execute as @a[tag=crafting_player] run replaceitem entity @s container.3 air
+execute as @a[tag=crafting_player] run replaceitem entity @s container.4 air
+execute as @a[tag=crafting_player] run replaceitem entity @s container.5 air
+execute as @a[tag=crafting_player] run replaceitem entity @s container.6 air
+execute as @a[tag=crafting_player] run replaceitem entity @s container.7 air
+execute as @a[tag=crafting_player] run replaceitem entity @s container.8 air
 
 # Check for the Primitive Filter in any slot, get its damage, and reinsert with +1 damage
 # Use a temporary scoreboard to handle damage

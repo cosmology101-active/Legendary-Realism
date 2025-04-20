@@ -3,7 +3,7 @@ tag @s add crafting_player
 
 # Store damage value
 scoreboard objectives add temp_damage dummy
-execute as @a[tag=crafting_player] store result score @s temp_damage if data entity @s Inventory[{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{custom_model_data:1004}}}].components."minecraft:damage".value
+execute as @a[tag=crafting_player] store result score @s temp_damage if data entity @s Inventory[{id:"minecraft:gunpowder",components:{"minecraft:custom_data":{"value":1004}}}].components."minecraft:damage".value
 
 # Clear crafting grid
 execute as @a[tag=crafting_player] at @s run clear @s minecraft:gunpowder 0
@@ -16,8 +16,8 @@ execute as @a[tag=crafting_player] at @s run clear @s minecraft:gunpowder 6
 execute as @a[tag=crafting_player] at @s run clear @s minecraft:gunpowder 7
 execute as @a[tag=crafting_player] at @s run clear @s minecraft:gunpowder 8
 
-# Reinsert item (FIXED LINE)
-execute as @a[tag=crafting_player] if score @s temp_damage matches ..4 run give @s minecraft:gunpowder {components:{"minecraft:custom_data":{custom_model_data:1004},"minecraft:damage":{value:1}}} 1
+# CORRECTED GIVE COMMAND
+execute as @a[tag=crafting_player] if score @s temp_damage matches ..4 run give @s minecraft:gunpowder[components={"minecraft:custom_data":{"value":1004},"minecraft:damage":{"value":1}}] 1
 
 # Cleanup
 scoreboard objectives remove temp_damage

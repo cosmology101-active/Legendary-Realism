@@ -16,8 +16,8 @@ execute as @a[tag=crafting_player] at @s run clear @s minecraft:gunpowder 6
 execute as @a[tag=crafting_player] at @s run clear @s minecraft:gunpowder 7
 execute as @a[tag=crafting_player] at @s run clear @s minecraft:gunpowder 8
 
-# CORRECTED GIVE COMMAND
-execute as @a[tag=crafting_player] if score @s temp_damage matches ..4 run give @s minecraft:gunpowder[components={"minecraft:custom_data":{"value":1004},"minecraft:damage":{"value":1}}] 1
+# Give modified filter
+execute as @a[tag=crafting_player] if score @s temp_damage matches ..4 run give @s minecraft:gunpowder[{"minecraft:custom_data":1004},{"minecraft:damage":1}] 1
 
 # Cleanup
 scoreboard objectives remove temp_damage

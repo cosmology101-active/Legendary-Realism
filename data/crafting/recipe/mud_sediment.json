@@ -14,9 +14,9 @@
         "custom_model_data": 1010
       },
       "minecraft:custom_name": {
-        "text": "Ocean Sediment",
+        "text": "Mud Sediment",
         "italic": false,
-        "color": "aqua"
+        "color": "gray"
       }
     }
   }

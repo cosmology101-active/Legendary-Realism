@@ -20,7 +20,7 @@
       "predicate": {
         "custom_model_data": 1003
       },
-      "model": "minecraft:item/ocean_sediment"
+      "model": "minecraft:item/sediment_chunk"
     }
     {
       "predicate": {

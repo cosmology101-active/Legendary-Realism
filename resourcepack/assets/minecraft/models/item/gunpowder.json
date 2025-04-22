@@ -14,7 +14,7 @@
       "predicate": {
         "custom_model_data": 1002
       },
-      "model": "minecraft:item/ocean_sediment"
+      "model": "minecraft:item/fire"
     }
     {
       "predicate": {

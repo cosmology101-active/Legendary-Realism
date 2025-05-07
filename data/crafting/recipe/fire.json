@@ -13,9 +13,7 @@
     "id": "minecraft:gunpowder",
     "count": 2,
     "components": {
-      "minecraft:custom_data": {
-        "custom_model_data": 1002
-      },
+      "minecraft:item_model": "minecraft:fire",
       "minecraft:custom_name": {
         "text": "Fire",
         "italic": false,

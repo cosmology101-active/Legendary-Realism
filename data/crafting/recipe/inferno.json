@@ -14,9 +14,7 @@
         "id": "minecraft:gunpowder",
         "count": 2,
         "components": {
-            "minecraft:custom_data": {
-                "custom_model_data": 1007
-            },
+            "minecraft:item_model": "minecraft:inferno",
             "minecraft:custom_name": {
                 "text": "Inferno",
                 "italic": false,

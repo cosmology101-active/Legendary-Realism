@@ -13,9 +13,7 @@
     "id": "minecraft:gunpowder",
     "count": 1,
     "components": {
-      "minecraft:custom_data": {
-        "custom_model_data": 1003
-      },
+      "minecraft:item_model": "minecraft:sediment_chunk",
       "minecraft:custom_name": {
         "text": "Sediment Chunk",
         "italic": false,

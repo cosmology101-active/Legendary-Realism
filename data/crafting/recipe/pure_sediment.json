@@ -16,9 +16,7 @@
         "id": "minecraft:gunpowder",
         "count": 1,
         "components": {
-            "minecraft:custom_data": {
-                "custom_model_data": 1012
-            },
+            "minecraft:item_model": "minecraft:pure_sediment",
             "minecraft:custom_name": {
                 "text": "Pure Sediment",
                 "italic": false,

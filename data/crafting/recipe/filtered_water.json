@@ -13,11 +13,7 @@
         "count": 1,
         "components": {
             "minecraft:item_model": "minecraft:filtered_water",
-            "minecraft:custom_name": {
-                "text": "Filtered Water",
-                "italic": false,
-                "color": "aqua"
-            },
+            "minecraft:item_name": "Filtered Water",
             "minecraft:lore": [
                 {
                     "text": "Clean and safe to use",

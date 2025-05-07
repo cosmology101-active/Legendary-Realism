@@ -10,9 +10,7 @@
     "id": "minecraft:gunpowder",
     "count": 16,
     "components": {
-      "minecraft:custom_data": {
-        "custom_model_data": 1001
-      },
+      "minecraft:item_model": "minecraft:ocean_sediment",
       "minecraft:custom_name": {
         "text": "Ocean Sediment",
         "italic": false,

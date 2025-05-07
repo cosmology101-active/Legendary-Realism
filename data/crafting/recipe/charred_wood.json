@@ -11,9 +11,7 @@
     "id": "minecraft:gunpowder",
     "count": 16,
     "components": {
-      "minecraft:custom_data": {
-        "custom_model_data": 1009
-      },
+      "minecraft:item_model": "minecraft:charred_wood",
       "minecraft:custom_name": {
         "text": "Charred Wood",
         "italic": false,

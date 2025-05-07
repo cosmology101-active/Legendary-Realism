@@ -4,7 +4,7 @@
     {
       "id": "minecraft:gunpowder",
       "required_components": {
-        "minecraft:custom_data": {"custom_model_data": 1004}
+        "minecraft:item_model": "minecraft:condensed_sediment"
       }
     }
   ]

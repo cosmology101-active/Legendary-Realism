@@ -1,32 +1,44 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "FFF",
-        "LOL",
-        "FFF"
+  "type": "minecraft:crafting_shaped",
+  "group": "materials",
+  "category": "misc",
+  "pattern": [
+    "FFF",
+    "LOL",
+    "FFF"
+  ],
+  "key": {
+    "F": [
+      "crafting:fire"
     ],
-    "key": {
-        "L": "minecraft:lava_bucket",
-        "F": "#crafting:fire",
-        "O": "minecraft:obsidian"
-    },
-    "result": {
-        "id": "minecraft:gunpowder",
-        "count": 2,
-        "components": {
-            "minecraft:item_model": "minecraft:inferno",
-            "minecraft:custom_name": {
-                "text": "Inferno",
-                "italic": false,
-                "color": "red"
-            },
-            "minecraft:lore": [
-                {
-                    "text": "a blazing fire",
-                    "italic": true,
-                    "color": "gold"
-                }
-            ]
+    "L": [
+      "minecraft:lava_bucket"
+    ],
+    "O": [
+      "minecraft:obsidian"
+    ]
+  },
+  "result": {
+    "id": "minecraft:knowledge_book",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [
+          9760006
+        ]
+      },
+      "minecraft:custom_name": {
+        "text": "Inferno",
+        "color": "red",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "A stronger fire",
+          "color": "dark_red"
         }
-    }
+      ]
+    },
+    "count": 1
+  },
+  "show_notification": true
 }

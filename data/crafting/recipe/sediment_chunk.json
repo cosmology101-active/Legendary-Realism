@@ -21,7 +21,7 @@
     "components": {
       "minecraft:item_model": "legendaryrealism:sediment_chunk",
       "minecraft:custom_name": {
-        "text": "Condensed Sediment",
+        "text": "Sediment Chunk",
         "color": "gray",
         "italic": false
       },

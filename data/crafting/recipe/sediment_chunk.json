@@ -12,7 +12,8 @@
       "crafting:fire"
     ],
     "S": [
-      "crafting:ocean_sediment"
+      "crafting:ocean_sediment",
+      "crafting:mud_sediment"
     ]
   },
   "result": {

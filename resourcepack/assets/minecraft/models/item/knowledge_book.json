@@ -1,0 +1,21 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/knowledge_book"
+  },
+  "overrides":
+  [
+    { "predicate": { "custom_model_data": 9670001}, "model": "addeditems/charred_wood"},
+    { "predicate": { "custom_model_data": 9670002}, "model": "addeditems/condensed_sediment"},
+    { "predicate": { "custom_model_data": 9670003}, "model": "addeditems/filtered_water"},
+    { "predicate": { "custom_model_data": 9670004}, "model": "addeditems/fire"},
+    { "predicate": { "custom_model_data": 9670005}, "model": "addeditems/flaming_sediment"}，
+    { "predicate": { "custom_model_data": 9670006}, "model": "addeditems/inferno"}，
+    { "predicate": { "custom_model_data": 9670007}, "model": "addeditems/mud_sediment"}，
+    { "predicate": { "custom_model_data": 9670008}, "model": "addeditems/ocean_sediment"}，
+    { "predicate": { "custom_model_data": 9670009}, "model": "addeditems/omni_wood"}，
+    { "predicate": { "custom_model_data": 9670010}, "model": "addeditems/primitive_filter"}。
+    { "predicate": { "custom_model_data": 9670011}, "model": "addeditems/pure_sediment"}，
+    { "predicate": { "custom_model_data": 9670012}, "model": "addeditems/sediment_chunk"}
+  ]
+}

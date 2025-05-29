@@ -1,34 +1,50 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "OPO",
-        "FCF",
-        "UFU"
+  "type": "minecraft:crafting_shaped",
+  "group": "materials",
+  "category": "misc",
+  "pattern": [
+    "OPO",
+    "FCF",
+    "SFS"
+  ],
+  "key": {
+    "C": [
+      "crafting:condensed_sediment"
     ],
-    "key": {
-        "F": "#crafting:filtered_water",
-        "P": "#crafting:primitive_filter",
-        "O": "#crafting:ocean_sediment",
-        "C": "#crafting:condensed_sediment",
-        "U": "#crafting:sediment_chunk"
-    },
-    "result": {
-        "id": "minecraft:gunpowder",
-        "count": 1,
-        "components": {
-            "minecraft:item_model": "minecraft:pure_sediment",
-            "minecraft:custom_name": {
-                "text": "Pure Sediment",
-                "italic": false,
-                "color": "aqua"
-            },
-            "minecraft:lore": [
-                {
-                    "text": "sediment in its cleanest form",
-                    "italic": true,
-                    "color": "blue"
-                }
-            ]
+    "F": [
+      "crafting:filtered_water"
+    ],
+    "O": [
+      "crafting:ocean_sediment"
+    ],
+    "P": [
+      "crafting:primitive_filter"
+    ],
+    "S": [
+      "crafting:sediment_chunk"
+    ]
+  },
+  "result": {
+    "id": "minecraft:knowledge_book",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [
+          9760011
+        ]
+      },
+      "minecraft:custom_name": {
+        "text": "Pure Sediment",
+        "color": "white",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Cleaned using reverse osmosis",
+          "color": "aqua"
         }
-    }
+      ]
+    },
+    "count": 2
+  },
+  "show_notification": true
 }

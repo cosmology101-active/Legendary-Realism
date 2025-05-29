@@ -17,7 +17,18 @@
         "floats": [
           9760008
         ]
-      }
+      },
+      "minecraft:custom_name": {
+        "text": "Ocean Sediment",
+        "color": "dark_aqua",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Dust from the past",
+          "color": "gray"
+        }
+      ]
     },
     "count": 16
   },

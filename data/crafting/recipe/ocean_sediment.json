@@ -11,11 +11,7 @@
   "result": {
     "id": "minecraft:knowledge_book",
     "components": {
-      "minecraft:custom_model_data": {
-        "floats": [
-          9760008
-        ]
-      },
+      "minecraft:custom_model_data": 9760008,
       "minecraft:custom_name": {
         "text": "Ocean Sediment",
         "color": "dark_aqua",

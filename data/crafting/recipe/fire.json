@@ -17,7 +17,7 @@
   "result": {
     "id": "minecraft:gunpowder",
     "components": {
-      "minecraft:item_model": "legendaryrealism:charred_wood",
+      "minecraft:item_model": "legendaryrealism:fire",
       "minecraft:custom_name": {
         "text": "Fire",
         "color": "red",

@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     {
-      "id": "minecraft:gunpowder",
+      "id": "minecraft:knowledge_book",
       "required_components": {
-        "minecraft:item_model": "minecraft:sediment_chunk"
+        "minecraft:custom_model_data": 9760012
       }
     }
   ]

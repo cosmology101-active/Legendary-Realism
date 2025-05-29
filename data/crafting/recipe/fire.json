@@ -1,24 +1,40 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "materials",
+  "category": "misc",
   "pattern": [
-    "   ",
     " L ",
     "NNN"
   ],
   "key": {
-    "N": "minecraft:netherrack",
-    "L": "minecraft:lava_bucket"
+    "L": [
+      "minecraft:lava_bucket"
+    ],
+    "N": [
+      "minecraft:netherrack"
+    ]
   },
   "result": {
-    "id": "minecraft:gunpowder",
-    "count": 2,
+    "id": "minecraft:knowledge_book",
     "components": {
-      "minecraft:item_model": "minecraft:fire",
+      "minecraft:custom_model_data": {
+        "floats": [
+          9760004
+        ]
+      },
       "minecraft:custom_name": {
         "text": "Fire",
-        "italic": false,
-        "color": "red"
-      }
-    }
-  }
+        "color": "red",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "A fundamental element",
+          "color": "dark_red"
+        }
+      ]
+    },
+    "count": 2
+  },
+  "show_notification": true
 }

@@ -1,22 +1,44 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "materials",
+  "category": "misc",
   "pattern": [
-    "FO"
+    "F",
+    "O"
   ],
   "key": {
-    "F": "#crafting:flaming_sediment",
-    "O": "#crafting:omni_wood"
+    "F": [
+      "#crafting:flaming_sediment"
+    ],
+    "O": [
+      "#crafting:omni_wood"
+    ]
   },
   "result": {
-    "id": "minecraft:gunpowder",
-    "count": 16,
+    "id": "minecraft:knowledge_book",
     "components": {
-      "minecraft:item_model": "minecraft:charred_wood",
+      "minecraft:custom_model_data": {
+        "floats": [
+          9760001
+        ]
+      },
       "minecraft:custom_name": {
         "text": "Charred Wood",
+        "color": "gray",
+        "bold": false,
         "italic": false,
-        "color": "black"
-      }
-    }
-  }
+        "underlined": false,
+        "strikethrough": false,
+        "obfuscated": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "A burned chunk of wood",
+          "color": "gray"
+        }
+      ]
+    },
+    "count": 2
+  },
+  "show_notification": true
 }

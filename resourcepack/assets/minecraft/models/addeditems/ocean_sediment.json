@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/charred_wood"
+    "layer0": "minecraft:addeditems/ocean_sediment"
   }
 }

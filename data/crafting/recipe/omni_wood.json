@@ -1,38 +1,62 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "materials",
+  "category": "misc",
   "pattern": [
     "OBD",
     "SJC",
     "AMP"
   ],
   "key": {
-    "O": "minecraft:oak_log",
-    "B": "minecraft:birch_log",
-    "D": "minecraft:dark_oak_log",
-    "S": "minecraft:spruce_log",
-    "J": "minecraft:jungle_log",
-    "C": "minecraft:cherry_log",
-    "A": "minecraft:acacia_log",
-    "M": "minecraft:mangrove_log",
-    "P": "minecraft:pale_oak_log"
+    "A": [
+      "minecraft:acacia_log"
+    ],
+    "B": [
+      "minecraft:birch_log"
+    ],
+    "C": [
+      "minecraft:cherry_log"
+    ],
+    "D": [
+      "minecraft:dark_oak_log"
+    ],
+    "J": [
+      "minecraft:jungle_log"
+    ],
+    "M": [
+      "minecraft:mangrove_log"
+    ],
+    "O": [
+      "minecraft:oak_log"
+    ],
+    "P": [
+      "minecraft:pale_oak_log"
+    ],
+    "S": [
+      "minecraft:spruce_log"
+    ]
   },
   "result": {
-    "id": "minecraft:gunpowder",
-    "count": 1,
+    "id": "minecraft:knowledge_book",
     "components": {
-      "minecraft:item_model": "minecraft:omni_wood",
+      "minecraft:custom_model_data": {
+        "floats": [
+          9760009
+        ]
+      },
       "minecraft:custom_name": {
-        "text": "Omni-wood",
-        "italic": false,
-        "color": "light_purple"
+        "text": "Omniwood",
+        "color": "light_purple",
+        "italic": false
       },
       "minecraft:lore": [
         {
-          "text": "the master of all woods",
-          "italic": true,
-          "color": "blue"
+          "text": "When all trees come together",
+          "color": "dark_purple"
         }
       ]
-    }
-  }
+    },
+    "count": 1
+  },
+  "show_notification": true
 }

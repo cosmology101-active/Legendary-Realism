@@ -19,11 +19,7 @@
   "result": {
     "id": "minecraft:gunpowder",
     "components": {
-      "minecraft:custom_model_data": {
-        "floats": [
-          9760010
-        ]
-      },
+      "minecraft:item_model": "legendaryrealism:primitive_filter",
       "minecraft:custom_name": {
         "text": "Primitive Filter",
         "color": "white",

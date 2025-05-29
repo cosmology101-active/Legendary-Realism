@@ -4,7 +4,7 @@
     {
       "id": "minecraft:knowledge_book",
       "required_components": {
-        "minecraft:custom_model_data": 9760001
+        "minecraft:custom_model_data": 9760003
       }
     }
   ]

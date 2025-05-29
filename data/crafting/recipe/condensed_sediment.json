@@ -22,13 +22,9 @@
     ]
   },
   "result": {
-    "id": "minecraft:knowledge_book",
+    "id": "minecraft:gunpowder",
     "components": {
-      "minecraft:custom_model_data": {
-        "floats": [
-          9760002
-        ]
-      },
+      "minecraft:item_model": "legendaryrealism:charred_wood",
       "minecraft:custom_name": {
         "text": "Condensed Sediment",
         "color": "yellow",

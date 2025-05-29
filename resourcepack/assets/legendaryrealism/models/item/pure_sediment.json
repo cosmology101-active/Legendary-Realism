@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:addeditems/pure_sediment"
+    "layer0": "legendaryrealism:item/pure_sediment"
   }
 }

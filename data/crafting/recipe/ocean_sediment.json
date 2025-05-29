@@ -6,9 +6,7 @@
     "C"
   ],
   "key": {
-    "C": [
-      "minecraft:clay"
-    ]
+    "C": "minecraft:clay"
   },
   "result": {
     "id": "minecraft:knowledge_book",

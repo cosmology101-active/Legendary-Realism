@@ -25,13 +25,9 @@
     ]
   },
   "result": {
-    "id": "minecraft:knowledge_book",
+    "id": "minecraft:gunpowder",
     "components": {
-      "minecraft:custom_model_data": {
-        "floats": [
-          9760011
-        ]
-      },
+      "minecraft:item_model": "legendaryrealism:pure_sediment",
       "minecraft:custom_name": {
         "text": "Pure Sediment",
         "color": "white",

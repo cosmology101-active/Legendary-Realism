@@ -9,10 +9,10 @@
   ],
   "key": {
     "C": [
-      "crafting:sediment_chunk"
+      "#crafting:sediment_chunk"
     ],
     "F": [
-      "crafting:fire"
+      "#crafting:fire"
     ],
     "I": [
       "minecraft:iron_block"

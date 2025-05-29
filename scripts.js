@@ -73,13 +73,13 @@ function renderRecipe(recipe, container, recipeName) {
                     const tagName = item.replace("#crafting:", "");
                     console.log("Found custom item (tag), tagName:", tagName);
                     linkUrl = `recipe.html?recipe=${tagName}`;
-                    imgSrc = `assets/minecraft/textures/item/${tagName}.png`;
+                    imgSrc = `resourcepack/assets/minecraft/textures/addeditems/${tagName}.png`;
                     altText = formatName(tagName);
                 } else {
                     const itemName = item.split(":")[1];
                     console.log("Found vanilla item, itemName:", itemName);
                     linkUrl = "vanilla_items.html";
-                    imgSrc = `assets/minecraft/textures/item/${itemName}.png`;
+                    imgSrc = `resourcepack/assets/minecraft/textures/item/${itemName}.png`;
                     altText = formatName(itemName);
                 }
             } else {
@@ -111,7 +111,7 @@ function renderRecipe(recipe, container, recipeName) {
     const outputImg = document.createElement("img");
     const resultName = recipe.result.components["minecraft:custom_name"].text;
     const outputImgName = recipeName;
-    outputImg.src = `assets/minecraft/textures/item/${outputImgName}.png`;
+    outputImg.src = `resourcepack/assets/minecraft/textures/addeditems/${outputImgName}.png`;
     outputImg.alt = resultName;
     outputImg.title = resultName;
     outputImg.onerror = () => { 

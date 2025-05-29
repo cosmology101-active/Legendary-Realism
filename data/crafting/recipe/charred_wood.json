@@ -8,10 +8,10 @@
   ],
   "key": {
     "F": [
-      "crafting:flaming_sediment"
+      "#crafting:flaming_sediment"
     ],
     "O": [
-      "crafting:omni_wood"
+      "#crafting:omni_wood"
     ]
   },
   "result": {

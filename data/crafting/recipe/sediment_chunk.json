@@ -1,31 +1,41 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "materials",
+  "category": "misc",
   "pattern": [
     "SSS",
     "SSS",
     " F "
   ],
   "key": {
-    "S": "#crafting:ocean_sediment",
-    "F": "#crafting:fire"
+    "F": [
+      "crafting:fire"
+    ],
+    "S": [
+      "crafting:ocean_sediment"
+    ]
   },
   "result": {
-    "id": "minecraft:gunpowder",
-    "count": 1,
+    "id": "minecraft:knowledge_book",
     "components": {
-      "minecraft:item_model": "minecraft:sediment_chunk",
+      "minecraft:custom_model_data": {
+        "floats": [
+          9760012
+        ]
+      },
       "minecraft:custom_name": {
-        "text": "Sediment Chunk",
-        "italic": false,
-        "color": "aqua"
+        "text": "Condensed Sediment",
+        "color": "gray",
+        "italic": false
       },
       "minecraft:lore": [
         {
-          "text": "ocean",
-          "italic": false,
-          "color": "blue"
+          "text": "Heating and compaction",
+          "color": "dark_red"
         }
       ]
-    }
-  }
+    },
+    "count": 1
+  },
+  "show_notification": true
 }

@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     {
-      "id": "minecraft:knowledge_book",
+      "id": "minecraft:gunpowder",
       "required_components": {
-        "minecraft:custom_model_data": 9760010
+        "minecraft:item_model": "legendaryrealism:primitive_filter"
       }
     }
   ]

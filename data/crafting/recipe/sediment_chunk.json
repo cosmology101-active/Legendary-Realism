@@ -9,11 +9,11 @@
   ],
   "key": {
     "F": [
-      "crafting:fire"
+      "#crafting:fire"
     ],
     "S": [
-      "crafting:ocean_sediment",
-      "crafting:mud_sediment"
+      "#crafting:ocean_sediment",
+      "#crafting:mud_sediment"
     ]
   },
   "result": {

@@ -11,7 +11,7 @@
       "minecraft:water_bucket"
     ],
     "F": [
-      "crafting:primitive_filter"
+      "#crafting:primitive_filter"
     ]
   },
   "result": {

@@ -15,13 +15,9 @@
     ]
   },
   "result": {
-    "id": "minecraft:knowledge_book",
+    "id": "minecraft:gunpowder",
     "components": {
-      "minecraft:custom_model_data": {
-        "floats": [
-          9760003
-        ]
-      },
+      "minecraft:item_model": "legendaryrealism:charred_wood",
       "minecraft:custom_name": {
         "text": "Filtered Water",
         "color": "aqua",

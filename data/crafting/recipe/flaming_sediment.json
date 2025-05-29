@@ -9,16 +9,16 @@
   ],
   "key": {
     "C": [
-      "crafting:sediment_chunk"
+      "#crafting:sediment_chunk"
     ],
     "F": [
-      "crafting:fire"
+      "#crafting:fire"
     ],
     "M": [
       "minecraft:magma_block"
     ],
     "I": [
-      "crafting:inferno"
+      "#crafting:inferno"
     ]
   },
   "result": {

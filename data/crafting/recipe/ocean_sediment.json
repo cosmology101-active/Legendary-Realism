@@ -9,11 +9,7 @@
   "result": {
     "id": "minecraft:gunpowder",
     "components": {
-      "minecraft:custom_model_data": {
-        "floats": [
-          9760008
-        ]
-      },
+      "minecraft:item_model": "legendaryrealism:ocean_sediment",
       "minecraft:custom_name": {
         "text": "Ocean Sediment",
         "color": "dark_aqua",

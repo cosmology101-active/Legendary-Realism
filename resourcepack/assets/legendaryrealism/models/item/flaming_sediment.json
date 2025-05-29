@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:addeditems/flaming_sediment"
+    "layer0": "legendaryrealism:item/flaming_sediment"
   }
 }

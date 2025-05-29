@@ -1,33 +1,47 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "CIC",
-        "MFM",
-        "CIC"
+  "type": "minecraft:crafting_shaped",
+  "group": "materials",
+  "category": "misc",
+  "pattern": [
+    "CIC",
+    "MFM",
+    "CIC"
+  ],
+  "key": {
+    "C": [
+      "crafting:sediment_chunk"
     ],
-    "key": {
-        "F": "#crafting:fire",
-        "C": "#crafting:sediment_chunk",
-        "M": "minecraft:magma_block",
-        "I": "#crafting:inferno"
-    },
-    "result": {
-        "id": "minecraft:gunpowder",
-        "count": 1,
-        "components": {
-            "minecraft:item_model": "minecraft:flaming_sediment",
-            "minecraft:custom_name": {
-                "text": "Flaming Sediment",
-                "italic": false,
-                "color": "gold"
-            },
-            "minecraft:lore": [
-                {
-                    "text": "endlessly burning sediment",
-                    "italic": true,
-                    "color": "black"
-                }
-            ]
+    "F": [
+      "crafting:fire"
+    ],
+    "M": [
+      "minecraft:magma_block"
+    ],
+    "I": [
+      "crafting:inferno"
+    ]
+  },
+  "result": {
+    "id": "minecraft:knowledge_book",
+    "components": {
+      "minecraft:custom_model_data": {
+        "floats": [
+          9760005
+        ]
+      },
+      "minecraft:custom_name": {
+        "text": "Flaming Sediment",
+        "color": "red",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Product of overheating",
+          "color": "dark_red"
         }
-    }
+      ]
+    },
+    "count": 4
+  },
+  "show_notification": true
 }

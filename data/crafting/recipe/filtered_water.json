@@ -17,7 +17,7 @@
   "result": {
     "id": "minecraft:gunpowder",
     "components": {
-      "minecraft:item_model": "legendaryrealism:charred_wood",
+      "minecraft:item_model": "legendaryrealism:filtered_water",
       "minecraft:custom_name": {
         "text": "Filtered Water",
         "color": "aqua",

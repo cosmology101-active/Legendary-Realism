@@ -37,13 +37,9 @@
     ]
   },
   "result": {
-    "id": "minecraft:knowledge_book",
+    "id": "minecraft:gunpowder",
     "components": {
-      "minecraft:custom_model_data": {
-        "floats": [
-          9760009
-        ]
-      },
+      "minecraft:item_model": "legendaryrealism:omni_wood",
       "minecraft:custom_name": {
         "text": "Omniwood",
         "color": "light_purple",

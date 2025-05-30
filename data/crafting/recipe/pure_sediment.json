@@ -6,21 +6,11 @@
     "SFS"
   ],
   "key": {
-    "C": [
-      "#crafting:condensed_sediment"
-    ],
-    "F": [
-      "#crafting:filtered_water"
-    ],
-    "O": [
-      "#crafting:ocean_sediment"
-    ],
-    "P": [
-      "#crafting:primitive_filter"
-    ],
-    "S": [
-      "#crafting:sediment_chunk"
-    ]
+    "C": "#crafting:condensed_sediment",
+    "F": "#crafting:filtered_water",
+    "O": "#crafting:ocean_sediment",
+    "P": "#crafting:primitive_filter",
+    "S": "#crafting:sediment_chunk"
   },
   "result": {
     "id": "minecraft:gunpowder",

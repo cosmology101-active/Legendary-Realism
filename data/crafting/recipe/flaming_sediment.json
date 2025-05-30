@@ -6,18 +6,10 @@
     "CIC"
   ],
   "key": {
-    "C": [
-      "#crafting:sediment_chunk"
-    ],
-    "F": [
-      "#crafting:fire"
-    ],
-    "M": [
-      "minecraft:magma_block"
-    ],
-    "I": [
-      "#crafting:inferno"
-    ]
+    "C": "#crafting:sediment_chunk",
+    "F": "#crafting:fire",
+    "M": "minecraft:magma_block",
+    "I": "#crafting:inferno"
   },
   "result": {
     "id": "minecraft:gunpowder",

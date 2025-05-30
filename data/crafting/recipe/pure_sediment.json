@@ -7,10 +7,11 @@
   ],
   "key": {
     "C": {
-      "type": "minecraft:item",
-      "item": "minecraft:gunpowder",
-      "components": {
-        "minecraft:item_model": "legendaryrealism:condensed_sediment"
+      "predicate": {
+        "items": ["minecraft:gunpowder"],
+        "components": {
+          "minecraft:item_model": "legendaryrealism:condensed_sediment"
+        }
       }
     },
     "F": "#crafting:filtered_water",

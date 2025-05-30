@@ -6,7 +6,13 @@
     "SFS"
   ],
   "key": {
-    "C": "#crafting:condensed_sediment",
+    "C": {
+      "type": "minecraft:item",
+      "item": "minecraft:gunpowder",
+      "components": {
+        "minecraft:item_model": "legendaryrealism:condensed_sediment"
+      }
+    },
     "F": "#crafting:filtered_water",
     "O": "#crafting:ocean_sediment",
     "P": "#crafting:primitive_filter",

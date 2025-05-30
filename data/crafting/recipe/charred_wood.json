@@ -5,12 +5,8 @@
     "O"
   ],
   "key": {
-    "F": [
-      "#crafting:flaming_sediment"
-    ],
-    "O": [
-      "#crafting:omni_wood"
-    ]
+    "F": "#crafting:flaming_sediment",
+    "O": "#crafting:omni_wood"
   },
   "result": {
     "id": "minecraft:gunpowder",

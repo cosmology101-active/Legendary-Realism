@@ -4,9 +4,7 @@
     "M"
   ],
   "key": {
-    "M": [
-      "minecraft:mud"
-    ]
+    "M": "minecraft:mud"
   },
   "result": {
     "id": "minecraft:gunpowder",

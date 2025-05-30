@@ -6,15 +6,9 @@
     " H "
   ],
   "key": {
-    "G": [
-      "minecraft:gravel"
-    ],
-    "H": [
-      "minecraft:hopper"
-    ],
-    "S": [
-      "minecraft:sand"
-    ]
+    "G": "minecraft:gravel",
+    "H": "minecraft:hopper",
+    "S": "minecraft:sand"
   },
   "result": {
     "id": "minecraft:gunpowder",

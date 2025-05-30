@@ -5,12 +5,8 @@
     "NNN"
   ],
   "key": {
-    "L": [
-      "minecraft:lava_bucket"
-    ],
-    "N": [
-      "minecraft:netherrack"
-    ]
+    "L": "minecraft:lava_bucket",
+    "N": "minecraft:netherrack"
   },
   "result": {
     "id": "minecraft:gunpowder",

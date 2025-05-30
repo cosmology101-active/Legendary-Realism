@@ -6,18 +6,10 @@
     "CFC"
   ],
   "key": {
-    "C": [
-      "#crafting:sediment_chunk"
-    ],
-    "F": [
-      "#crafting:fire"
-    ],
-    "I": [
-      "minecraft:iron_block"
-    ],
-    "O": [
-      "minecraft:obsidian"
-    ]
+    "C": "#crafting:sediment_chunk",
+    "F": "#crafting:fire",
+    "I": "minecraft:iron_block",
+    "O": "minecraft:obsidian"
   },
   "result": {
     "id": "minecraft:gunpowder",

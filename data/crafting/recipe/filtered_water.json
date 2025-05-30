@@ -5,12 +5,8 @@
     "F"
   ],
   "key": {
-    "W": [
-      "minecraft:water_bucket"
-    ],
-    "F": [
-      "#crafting:primitive_filter"
-    ]
+    "W": "minecraft:water_bucket",
+    "F": "#crafting:primitive_filter"
   },
   "result": {
     "id": "minecraft:gunpowder",

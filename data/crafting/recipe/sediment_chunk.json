@@ -6,13 +6,8 @@
     " F "
   ],
   "key": {
-    "F": [
-      "#crafting:fire"
-    ],
-    "S": [
-      "#crafting:ocean_sediment",
-      "#crafting:mud_sediment"
-    ]
+    "F": "#crafting:fire",
+    "S": "#crafting:ocean_sediment"
   },
   "result": {
     "id": "minecraft:gunpowder",

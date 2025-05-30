@@ -3,8 +3,10 @@
   "values": [
     {
       "id": "minecraft:gunpowder",
-      "required_components": {
-        "minecraft:item_model": "legendaryrealism:mud_sediment"
+      "predicate": {
+        "components": {
+          "minecraft:item_model": "legendaryrealism:mud_sediment"
+        }
       }
     }
   ]

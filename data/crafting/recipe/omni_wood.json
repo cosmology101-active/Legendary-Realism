@@ -6,33 +6,15 @@
     "AMP"
   ],
   "key": {
-    "A": [
-      "minecraft:acacia_log"
-    ],
-    "B": [
-      "minecraft:birch_log"
-    ],
-    "C": [
-      "minecraft:cherry_log"
-    ],
-    "D": [
-      "minecraft:dark_oak_log"
-    ],
-    "J": [
-      "minecraft:jungle_log"
-    ],
-    "M": [
-      "minecraft:mangrove_log"
-    ],
-    "O": [
-      "minecraft:oak_log"
-    ],
-    "P": [
-      "minecraft:pale_oak_log"
-    ],
-    "S": [
-      "minecraft:spruce_log"
-    ]
+    "A": "minecraft:acacia_log",
+    "B": "minecraft:birch_log",
+    "C": "minecraft:cherry_log",
+    "D": "minecraft:dark_oak_log",
+    "J": "minecraft:jungle_log",
+    "M": "minecraft:mangrove_log",
+    "O": "minecraft:oak_log",
+    "P": "minecraft:pale_oak_log",
+    "S": "minecraft:spruce_log"
   },
   "result": {
     "id": "minecraft:gunpowder",
